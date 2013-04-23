@@ -1,0 +1,67 @@
+doctype 5
+html(lang="en")
+    head
+        title BYU GPA What-If Calculator
+        link(rel="stylesheet", href="index.css")
+        script(src="index.js")
+    body
+        .container
+            h1.title BYU GPA What-If Calculator
+            .description
+                p.
+                    This is a little tool to calculate your GPA based on what
+                    you think your grades might be for coming semesters. You
+                    just copy-paste the text that you see on "AIM - Grades"
+                    into here, and add in the letter grades next to current or
+                    future courses. The click "Calculate".
+                p.
+                    In case you're worried, this page <i>sends nothing to the
+                    server</i> so your grades aren't snooped or saved or
+                    anything like that.
+                p Try it out! Enter in or change some grades below to see what happens.
+            textarea#main-input.
+                Fall Semester xxxx
+                  DANCE 080   001         Disco                            1.00  A-   
+                  FUN   555   001   H     Honors Having Fun                3.00  B    
+                  HIST  901   001   H     History of Cheese                3.00  A    
+                  HONRS 777   001   H     The Perfect Class                1.00  C    
+                SEM HR ERN  xx.00  HR GRD   xx.00  GPA  x.xx
+
+                Winter Semester xxxx
+                  ABCD  xxx   001         ________________________         3.00  A-
+                  ABCD  xxx   001         ________________________         1.00  A 
+                  ABCD  xxx   001         ________________________         3.00  C 
+                  ABCD  xxx   001         ________________________         2.00  A 
+                  ABCD  xxx   001         ________________________         4.00  B+
+                  ABCD  xxx   001         ________________________         1.00  B-
+                  ABCD  xxx   001         ________________________         2.00  A 
+                  ABCD  xxx   001         ________________________         1.00  B+
+                SEM HR ERN  xx.00  HR GRD   xx.00  GPA  x.xx
+
+                --------------------------------------------------------------
+                CURRENT ENROLLMENT
+
+                Fall Semester xxxx
+                  ABCD  xxx   001         ________________________         3.00  [enter a grade]
+                  ABCD  xxx   001         ________________________         2.00  
+                  ABCD  xxx   001         ________________________         1.00  
+                  ABCD  xxx   001         ________________________         3.00  
+                  ABCD  xxx   001         ________________________         2.00  
+
+                --------------------------------------------------------------
+                FUTURE ENROLLMENT
+            button#submit Calculate!
+            p#output
+            h3 scoring
+            pre#scoring.
+              A = 4.00 grade points
+              A- = 3.70 grade points 
+              B+ = 3.33 grade points
+              B = 3.00 grade points
+              B- = 2.70 grade points
+              C+ = 2.30 grade points
+              C = 2.00 grade points
+              C- = 1.70 grade points
+              D+ = 1.30 grade points
+              D = 1.00 grade points
+              D- = 0.70 grade points

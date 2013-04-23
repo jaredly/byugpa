@@ -1,0 +1,24 @@
+div.container {
+  margin: 0 auto;
+  max-width: 700px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center; }
+  div.container .title {
+    color: #777; }
+  div.container .description {
+    color: #333;
+    font-size: 1.1em; }
+  div.container #main-input {
+    min-height: 500px;
+    width: 100%;
+    box-shadow: 0 0 5px #999999; }
+  div.container button#submit {
+    font-size: 1.2em;
+    background-color: #006dcc;
+    border-radius: 5px;
+    border: 1px solid #006aaa;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; }
+    div.container button#submit:hover {
+      background-color: #00aaff; }
